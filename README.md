@@ -45,14 +45,14 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 2. Clone o repositório:
 
    ```bash
-   git clone https://github.com/victoraugustogfavaro/myenergy.git
+   git clone https://github.com/victoraugustogfavaro/my-energy.git
 
    ```
 
 3. Navegue até a pasta do projeto:
 
    ```bash
-   cd myenergy
+   cd my-energy
 
    ```
 
@@ -76,7 +76,7 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 
 ## Repositório
 
-- [GitHub](https://github.com/victoraugustogfavaro/myenergy)
+- [GitHub](https://github.com/victoraugustogfavaro/my-energy)
 
 ## Figma
 
