@@ -18,9 +18,11 @@ const config: Config = {
         inter: ["Inter", "sans-serif"],
       },
       screens: {
-        xs: "390px",
-        sm: "550px",
+        xxs: "390px",
+        xs: "500px",
+        sm: "595px",
         md: "710px",
+        mg: "950px",
         lg: "1100px",
         xl: "1250px",
         xxl: "1400px",

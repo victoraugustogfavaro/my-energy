@@ -1,8 +1,43 @@
-function Header() {
-  return (
-    <header>
+"use client";
 
-    </header>);
+import Image from "next/image";
+import Logo from "@/images/logo.png";
+import Menu from "../Menu/Menu";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+function Header() {
+  const pathname = usePathname();
+
+  const buttomLinks =
+    pathname === "/contas" ||
+    pathname === "/contas/add" ||
+    /^\/contas\/\d+$/.test(pathname); // Verifica rotas com id
+
+  return (
+    <header className="flex justify-between items-center h-[120px] gap-2 px-6 md:px-12 lg:px-28 xl:px-32 bg-azul">
+      <Link href="/">
+        <Image
+          className="min-w-[80px] transition-transform duration-500 ease-in-out hover:scale-110"
+          src={Logo}
+          alt={
+            "Logo de um sol, abaixo dele folhas verdes e riscos azuis, remetentes a sustentabilidade"
+          }
+          width={80}
+        />
+      </Link>
+      <Menu />
+      <button
+        className={
+          buttomLinks
+            ? "xs:text-[1rem] sm:text-[1.125rem] bg-verde text-white border-none cursor-pointer rounded-lg h-[75px] w-[140px] px-2 font-bold transition-transform duration-500 ease-in-out hover:scale-110"
+            : "hidden"
+        }
+      >
+        Logout
+      </button>
+    </header>
+  );
 }
 
 export default Header;
