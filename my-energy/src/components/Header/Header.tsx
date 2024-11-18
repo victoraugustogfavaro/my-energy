@@ -15,7 +15,7 @@ function Header() {
     /^\/contas\/\d+$/.test(pathname); // Verifica rotas com id
 
   return (
-    <header className="flex justify-between items-center h-[120px] gap-2 px-6 md:px-12 lg:px-28 xl:px-32 bg-azul">
+    <header className="flex justify-between items-center h-[120px] gap-2 px-6 md:px-14 lg:px-28 bg-azul">
       <Link href="/">
         <Image
           className="min-w-[80px] transition-transform duration-500 ease-in-out hover:scale-110"

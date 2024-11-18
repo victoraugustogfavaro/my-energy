@@ -22,7 +22,7 @@ function Menu() {
       <ul
         className={
           buttomLinks
-            ? "flex flex-col gap-4 sm:flex-row sm:gap-8 md:gap-12 mg:gap-14 lg:gap-16 lg:ml-[100px] xl:gap-24 xl:ml-[145px] text-white text-center font-bold"
+            ? "flex flex-col gap-4 sm:flex-row sm:gap-4 mg:gap-14 lg:gap-16  xl:gap-24 xxl:ml-[145px]  text-white text-center font-bold"
             : "flex flex-col gap-4 xs:flex-row xs:gap-8 md:gap-16 lg:gap-24 text-white text-center font-bold"
         }
       >

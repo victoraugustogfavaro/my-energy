@@ -25,10 +25,10 @@ const config: Config = {
         mg: "950px",
         lg: "1100px",
         xl: "1250px",
-        xxl: "1400px",
+        xxl: "1750px",
       },
       backgroundImage: {
-        gradient: "linear-gradient(to bottom, #00ADEF 0%, #FFC26B 100%)",
+        gradientFundo: "linear-gradient(to bottom, #00ADEF 0%, #FFC26B 100%)",
       },
     },
   },
