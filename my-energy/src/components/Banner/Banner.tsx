@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Imagem from "@/images/image.svg";
+import imagemBanner from "@/images/image.svg";
 import Link from "next/link";
 
 function Banner() {
@@ -22,8 +22,8 @@ function Banner() {
         </Link>
       </div>
       <Image
-        src={Imagem}
-        alt="Escrita em roxo com Logo circular entre dois textos Tech Mec"
+        src={imagemBanner}
+        alt="Paisagem com várias turbinas eólicas em uma área montanhosa ao entardecer, com luz do sol brilhando entre as hélices e colinas ao fundo."
       />
     </section>
   );

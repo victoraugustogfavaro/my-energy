@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Logo from "@/images/logo.png";
+import logo from "@/images/logo.png";
 import Menu from "../Menu/Menu";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -19,7 +19,7 @@ function Header() {
       <Link href="/">
         <Image
           className="min-w-[80px] transition-transform duration-500 ease-in-out hover:scale-110"
-          src={Logo}
+          src={logo}
           alt={
             "Logo de um sol, abaixo dele folhas verdes e riscos azuis, remetentes a sustentabilidade"
           }
