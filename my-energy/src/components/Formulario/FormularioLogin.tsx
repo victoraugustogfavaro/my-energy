@@ -156,7 +156,7 @@ function FormularioLogin() {
       </div>
       <button
         type="submit"
-        className="flex items-center justify-center bg-verde w-[120px] text-white text-[1.1rem] rounded-2xl h-[38px] font-bold transition-all duration-500 ease-in-out hover:scale-110"
+        className="flex items-center justify-center bg-verde w-[120px] text-white text-[1.1rem] rounded-2xl h-[60px] font-bold transition-all duration-500 ease-in-out hover:scale-110"
       >
         Entrar
       </button>
