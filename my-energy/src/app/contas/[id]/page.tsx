@@ -1,9 +1,14 @@
-function EditarContas(){
-  return(
-    <main>
+import FormularioEditarContaDeLuz from "@/components/Formulario/FormularioEditarConta";
+import ProtectedRoute from "@/components/ProtectedRoute/ProtectedRoute";
 
-    </main>
-  )
+function EditarContas({ params }: { params: { id: string } }) {
+  return (
+    <ProtectedRoute>
+      <main>
+        <FormularioEditarContaDeLuz params={params} />
+      </main>
+    </ProtectedRoute>
+  );
 }
 
-export default EditarContas
+export default EditarContas;

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cadastro Contas | MyEnergy",
+  title: "Cadastrar Contas | MyEnergy",
 };
 
 export default function RootLayout({
