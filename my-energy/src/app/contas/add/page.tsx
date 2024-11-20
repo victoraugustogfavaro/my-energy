@@ -1,9 +1,14 @@
-function CadastrarContas(){
-  return(
-    <main>
+import FormularioCadastroConta from "@/components/Formulario/FormularioCadConta";
+import ProtectedRoute from "@/components/ProtectedRoute/ProtectedRoute";
 
-    </main>
-  )
+function CadastrarContas() {
+  return (
+    <ProtectedRoute>
+      <main>
+        <FormularioCadastroConta />
+      </main>
+    </ProtectedRoute>
+  );
 }
 
-export default CadastrarContas
+export default CadastrarContas;

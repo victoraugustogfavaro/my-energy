@@ -7,8 +7,8 @@ import Card from "@/components/Card/Card";
 
 function Participantes() {
   return (
-    <main className="bg-gradientFundo min-h-[75vh] py-[30px]">
-      <div className="flex flex-col justify-center items-center text-white my-[22px]">
+    <main className="bg-gradientFundo min-h-[75vh] py-4">
+      <div className="flex flex-col justify-center items-center text-white mb-[40px]">
         <h1 className="text-[2.2rem] font-extrabold">Participantes</h1>
         <h2 className="text-[1.3rem]">1TDSPG</h2>
       </div>
@@ -43,7 +43,7 @@ function Participantes() {
       <a
         href="https://github.com/victoraugustogfavaro/my-energy"
         target="blank"
-        className="flex justify-center items-center text-white bg-verde w-[250px] h-[75px] rounded-xl mx-auto my-[3%] text-[1.2rem] font-bold transition-transform duration-500 ease-in-out hover:scale-110"
+        className="flex justify-center items-center text-white bg-verde w-[200px] h-[75px] rounded-xl mx-auto my-[3%] text-[1.2rem] font-bold transition-transform duration-500 ease-in-out hover:scale-110"
       >
         Repositório
       </a>
