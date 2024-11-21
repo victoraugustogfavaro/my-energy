@@ -110,7 +110,7 @@ function FormularioLogin() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col justify-center items-center w-[340px] h-[400px] mx-auto my-20 bg-laranja text-white rounded-2xl xs:w-[370px] sm:w-[400px]"
+      className="flex flex-col justify-center items-center w-[340px] h-[400px] mx-auto my-28 bg-laranja text-white rounded-2xl xs:w-[370px] sm:w-[400px]"
     >
       <h1 className="text-center text-cinza font-bold">Login</h1>
       <div className="flex flex-col my-6">

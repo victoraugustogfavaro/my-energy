@@ -98,7 +98,7 @@ const FormularioCadastroConta = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col justify-center items-center w-[340px] h-[500px] mx-auto my-10 bg-laranja text-white rounded-2xl xs:w-[370px] sm:w-[400px]"
+      className="flex flex-col justify-center items-center w-[340px] h-[500px] mx-auto my-16 bg-laranja text-white rounded-2xl xs:w-[370px] sm:w-[400px]"
     >
       <h1 className="text-center font-bold text-cinza">Conta de Luz</h1>
       <div className="flex flex-col mt-8">
