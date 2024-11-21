@@ -6,12 +6,12 @@ function Contas() {
   return (
     <ProtectedRoute>
       <main>
-        <section className="flex flex-col justify-center items-center my-32 gap-12">
+        <section className="flex flex-col justify-center items-center my-24 gap-10">
           <h1 className="text-cinza text-[1.6rem] font-bold">Suas Contas</h1>
           <Tabela />
           <Link
             href="/contas/add"
-            className="text-center content-center text-white bg-verde w-[200px] h-[75px] rounded-xl mx-auto my-[3%] text-[1.1rem] font-bold transition-transform duration-500 ease-in-out hover:scale-110"
+            className="text-center content-center text-white bg-verde w-[200px] h-[75px] rounded-xl mx-auto text-[1.1rem] font-bold transition-transform duration-500 ease-in-out hover:scale-110"
           >
             Adicionar Conta
           </Link>

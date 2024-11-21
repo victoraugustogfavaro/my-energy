@@ -40,7 +40,7 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 
 1. Siga os passos do README da API de Java antes de seguir com os outros daqui:
 
-- [Repositório Java](https://)
+- [Repositório Java](https://github.com/jenniesuzuki/myEnergy)
 
 2. Clone o repositório:
 
@@ -86,9 +86,11 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 ## Participantes
 
 - **Victor Gigante**
+
   - RM: 555059
 
 - **Felipe Clarindo**
+
   - RM: 554547
 
 - **Jennifer Suzuki**

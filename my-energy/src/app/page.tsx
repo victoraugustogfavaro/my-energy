@@ -4,7 +4,7 @@ function Home() {
   return (
     <main>
       <Banner />
-      <div className={"w-[70%] my-[3%] mx-auto"}>
+      <div className={"w-[70%] my-[10%] md:my-[3%] mx-auto"}>
         <h2 className={"text-laranja mt-[30px] text-[1.6rem] font-bold"}>
           Nossa Essência
         </h2>

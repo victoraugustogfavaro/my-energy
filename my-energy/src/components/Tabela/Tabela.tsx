@@ -13,7 +13,7 @@ function Tabela() {
     const authCPF = localStorage.getItem("authCPF");
 
     const response = await fetch(
-      `http://localhost:8080/myenergy/contas/${authCPF}`
+      `http://localhost:8080/myenergy/contas/cpf/${authCPF}`
     );
     const data = await response.json();
 
@@ -47,25 +47,31 @@ function Tabela() {
     }
   };
 
+  // Mostrar no vídeo de UX
+  // // Funções de formatação apenas para exibição na tabela
+  // const formatarData = (data: string) => {
+  //   return new Date(data).toLocaleDateString("pt-BR"); // Formata para dd/MM/yyyy
+  // };
+
   return (
-    <table className="bg-laranja text-white">
+    <table className="bg-laranja text-white text-center">
       <thead>
-        <tr className="">
-          <th className="px-4 py-2 border">Data</th>
-          <th className="px-4 py-2 border">Valor (R$)</th>
-          <th className="px-4 py-2 border">kWh</th>
-          <th className="px-4 py-2 border">CO₂ (Gerado)</th>
-          <th className="px-4 py-2 border">Ações</th>
+        <tr className="text-center px-4 py-2 border">
+          <th className="px-4 py-2 md:px-6 md:py-4 border">Data</th>
+          <th className="px-4 py-2 md:px-6 md:py-4 border">Valor</th>
+          <th className="px-4 py-2 md:px-6 md:py-4 border">kWh</th>
+          <th className="px-4 py-2 md:px-6 md:py-4 border">CO₂ (Gerado)</th>
+          <th className="px-4 py-2 md:px-6 md:py-4 border">Ações</th>
         </tr>
       </thead>
       <tbody>
         {contas.map((c) => (
-          <tr key={c.id} className="bg-[#D9D9D9] text-cinza">
-            <td className="px-4 py-2 border">{c.data}</td>
-            <td className="px-4 py-2 border">{c.valor}</td>
-            <td className="px-4 py-2 border">{c.kwh}</td>
-            <td className="px-4 py-2 border">{c.co2}</td>
-            <td className="px-4 py-2 border flex justify-center gap-2">
+          <tr key={c.id} className="bg-[#D9D9D9] text-cinza text-center">
+            <td className="px-4 py-2 md:px-6 md:py-4 border">{c.data}</td>
+            <td className="px-4 py-2 md:px-6 md:py-4 border">{c.valor}</td>
+            <td className="px-4 py-2 md:px-6 md:py-4 border">{c.kwh}</td>
+            <td className="px-4 py-2 md:px-6 md:py-4 border">{c.co2}</td>
+            <td className="px-4 py-2 md:px-6 md:py-4 border flex flex-col md:flex-row justify-center gap-2 md:gap-6">
               <Link href={`/contas/${c.id}`}>
                 <FontAwesomeIcon
                   icon={faEdit}
@@ -84,8 +90,12 @@ function Tabela() {
       </tbody>
       <tfoot>
         <tr>
-          <td colSpan={5} className="px-4 py-2 text-start border text-white">
-            Total de contas: <span className="text-cinza">{contas.length}</span>
+          <td
+            colSpan={5}
+            className="px-4 py-2 md:px-6 md:py-4 text-start border text-white font-bold"
+          >
+            Total de contas:{" "}
+            <span className="text-cinza font-bold">{contas.length}</span>
           </td>
         </tr>
       </tfoot>

@@ -80,7 +80,7 @@ function FormularioLogin() {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/myenergy/clientes/login",
+        "http://localhost:8080/myenergy/usuarios/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -98,7 +98,7 @@ function FormularioLogin() {
         localStorage.setItem("authToken", token);
         localStorage.setItem("authCPF", cpf);
 
-        router.push("/"); // Redireciona para a página principal após o login
+        router.push("/contas");
       } else {
         alert("CPF ou senha inválidos. Tente novamente.");
       }
