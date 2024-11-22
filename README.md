@@ -98,4 +98,4 @@ Certifique-se de ter o **Node.js** instalado em sua máquina. O projeto utiliza 
 
 ## Vídeo
 
-- [Clique aqui!](https://)
+- [Clique aqui!](https://www.loom.com/share/5fa7b0a8a981435a85bebbf71b58d091?sid=fa27c658-c6aa-41fd-acdf-118be94c2022)

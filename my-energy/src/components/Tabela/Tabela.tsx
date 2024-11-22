@@ -47,12 +47,6 @@ function Tabela() {
     }
   };
 
-  // Mostrar no vídeo de UX
-  // // Funções de formatação apenas para exibição na tabela
-  // const formatarData = (data: string) => {
-  //   return new Date(data).toLocaleDateString("pt-BR"); // Formata para dd/MM/yyyy
-  // };
-
   return (
     <table className="bg-laranja text-white text-center">
       <thead>
